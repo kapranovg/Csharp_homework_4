@@ -8,12 +8,12 @@
 int numberA = Prompt("Введите число А");
 int numberB = Prompt("Введите число B");
 
-System.Console.WriteLine($"Число {numberA} в степени {numberB} = {numberDegree(numberA, numberB)}");
+numberDegree(numberA, numberB);
 
-double numberDegree(int firstNumber, int secondNumber)
+void numberDegree(int firstNumber, int secondNumber)
 {
     double result = Math.Pow(firstNumber, secondNumber);
-    return result;
+    System.Console.WriteLine($"Число {firstNumber} в степени {secondNumber} = {result}");
 }
 
 int Prompt(string message)
